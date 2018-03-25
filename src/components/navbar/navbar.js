@@ -9,7 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 import {NavLink as RRNavLink} from 'react-router-dom';
-import logo from 'images/By Forte Primary (Black).png'
+import logo from 'images/logo.svg'
 import './navbar.css'
 
 export class NavBar extends React.Component {
@@ -38,7 +38,7 @@ export class NavBar extends React.Component {
   }
 
   render() {
-    const pages = ['home', 'about', 'lookbook', 'shop'];
+    const pages = ['home'];
     const navLinks = pages.map(page => {
       return (
         <NavItem key={page}>
