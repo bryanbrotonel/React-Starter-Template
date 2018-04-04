@@ -1,13 +1,13 @@
 import React from 'react';
 // import {NavLink as RRNavLink} from 'react-router-dom';
-import './footer.css';
 
 export class Footer extends React.Component {
   render() {
     return(
-      <div className="footer">
+      <div className="footer container">
+          <hr/>
         <div className="container">
-          <p className="text-muted">Footer</p>
+          <h6 className="text-muted">FOOTER</h6>
         </div>
       </div>
     )
