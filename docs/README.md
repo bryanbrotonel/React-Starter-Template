@@ -42,7 +42,6 @@ to begin building your app for production.
 - [React](https://reactjs.org/)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
-- [Express](https://expressjs.com/)
 - [npm](https://www.npmjs.com/)
 
 ## Docs
