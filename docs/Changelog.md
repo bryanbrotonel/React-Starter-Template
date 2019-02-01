@@ -4,12 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.1] - 2019-02-01
-
+## [1.0.0] - 2017-06-20
 ### Added
-
-- Initial Commit
-- [React](https://reactjs.org/)
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [npm](https://www.npmjs.com/)
+- Iniital commit
+- [Webpack](https://webpack.js.org/) configuration
+- [Babel](https://babeljs.io/) configuraiton
+- [Eslint](https://eslint.org/) configuraiton
+- [SASS](https://sass-lang.com/) folder structure
+- [React](https://reactjs.org/) base component

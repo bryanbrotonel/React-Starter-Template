@@ -1,17 +1,23 @@
-const path = require('path');
+const path = require("path");
 const webpack = require("webpack");
 const merge = require("webpack-merge");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const APP_DIR = path.resolve(__dirname, '../src');
+const APP_DIR = path.resolve(__dirname, "../src");
 
 module.exports = env => {
   const { PLATFORM, VERSION } = env;
   return merge([
     {
-      entry: ['@babel/polyfill', APP_DIR],
+      entry: ["@babel/polyfill", APP_DIR],
+
+      resolve: {
+        modules: [APP_DIR, "node_modules"],
+        extensions: [".js", ".jsx"]
+      },
+
       module: {
         rules: [
           {
@@ -33,11 +39,12 @@ module.exports = env => {
           }
         ]
       },
+
       plugins: [
         new HtmlWebpackPlugin({
-          title: 'React Starter Template',
-          template: './src/index.html',
-          filename: './index.html',
+          title: "React Starter Template",
+          template: "./resources/index.html",
+          filename: "./index.html",
           inject: true,
           minify: {
             collapseWhitespace: true,
