@@ -39,7 +39,7 @@ module.exports = (env) => {
           title: 'me',
           template: './resources/index.html',
           filename: './index.html',
-          // favicon: './src/favicon.ico',
+          favicon: './src/favicon.ico',
           inject: true,
           minify: {
             collapseWhitespace: true,
