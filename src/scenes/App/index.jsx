@@ -1,16 +1,23 @@
 import React from 'react';
-import Foo from 'components/Foo/index.js';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  color: green;
+import NavRoutes from '../../navRoutes';
+
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
+const Container = styled.section`
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 `;
 
 const App = () => {
   return (
     <Container>
-      <p>Hello World</p>
-      <Foo />
+      <Navbar />
+      <NavRoutes />
+      <Footer />
     </Container>
   );
 };

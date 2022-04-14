@@ -161,6 +161,19 @@ const GlobalStyle = createGlobalStyle`
               transform: rotate(360deg);
     }
   }
+
+  @keyframes fadeInUp {
+    0% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
   
 `;
 
