@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Loading from './components/Loading';
 
-import Home from './scenes/Home';
+const Home = lazy(() => import('./scenes/Home'));
 
 const NavRoutes = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route
+      path="/"
+      element={
+        <Suspense fallback={<Loading />}>
+          <Home />
+        </Suspense>
+      }
+    ></Route>
   </Routes>
 );
 

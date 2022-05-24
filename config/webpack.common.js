@@ -5,6 +5,9 @@ const Dotenv = require('dotenv-webpack');
 const APP_DIR = path.resolve(__dirname, '../src');
 
 module.exports = {
+  optimization: {
+    usedExports: true,
+  },
   entry: {
     app: './src/index.js',
   },
