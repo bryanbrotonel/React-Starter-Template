@@ -1,21 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const LoadingContainer = styled.div`
-  margin: auto;
-  padding: 50px 0;
-
-  text-align: center;
-  font-size: var(--text-lg);
-  font-weight: bold;
-  font-family: var(--font-primary);
-`;
 
 function Loading() {
   return (
-    <LoadingContainer>
-      <span>NewNew</span>
-    </LoadingContainer>
+    <div className="h-[75vh] flex items-center justify-center">
+      <span className="font-serif text-5xl text-center">Loading...</span>
+    </div>
   );
 }
 

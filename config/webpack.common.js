@@ -1,6 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const APP_DIR = path.resolve(__dirname, '../src');
 
@@ -18,13 +19,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(tsx|ts|js)?$/,
         exclude: /node_modules/,
         loader: 'ts-loader',
       },
       {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
+        exclude: /\.inline.svg$/,
+      },
+      {
+        test: /\.inline.svg$/,
+        issuer: /\.(tsx|ts|js)?$/,
+        use: ['@svgr/webpack'],
       },
     ],
   },
@@ -33,7 +44,6 @@ module.exports = {
       title: 'New New',
       template: './resources/index.html',
       filename: './index.html',
-      favicon: './src/static/assets/images/favicon.svg',
       inject: true,
       minify: {
         collapseWhitespace: true,
@@ -46,6 +56,7 @@ module.exports = {
       },
     }),
     new Dotenv(),
+    new FaviconsWebpackPlugin('./src/static/assets/images/favicon.svg'),
   ],
   output: {
     filename: '[name].bundle.js',
