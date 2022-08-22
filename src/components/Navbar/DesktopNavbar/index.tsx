@@ -22,8 +22,7 @@ function DesktopNavbar(props: { links: string[][] }) {
             </NavLink>
           </div>
           <div className="justify-self-center flex flex-row items-center gap-8">
-            {/* Remove donate link */}
-            {pages.splice(0, pages.length - 1).map((link) => {
+            {pages.map((link) => {
               const linkPath = link[0];
               const linkName = link[1];
 

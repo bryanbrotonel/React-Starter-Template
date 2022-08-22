@@ -23,7 +23,7 @@ function NavMenu(props: PropTypes) {
       </div>
       <div className="container">
         <div className="flex flex-col gap-10 pt-5">
-          {links.splice(0, links.length - 1).map((link) => {
+          {links.map((link) => {
             const linkPath = link[0];
             const linkName = link[1];
 

@@ -9,7 +9,6 @@ function Navbar() {
     ['/team', 'Team'],
     ['/projects', 'Projects'],
     ['/blog', 'Blog'],
-    ['', 'Donate'],
   ];
 
   return (

@@ -10,8 +10,8 @@ These instructions will get you a copy of the template up and running on your lo
 
 What things you need to install the software and how to install them
 
-- [npm](https://www.npmjs.com/get-npm)
-- [React](https://reactjs.org/docs/add-react-to-a-new-app.html)
+- [React](https://github.com/facebook/react)
+- [npm](https://github.com/npm/cli)
 
 ### Development
 
@@ -39,10 +39,11 @@ to begin building your app for production.
 
 ## Built With
 
-- [React](https://reactjs.org/)
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [npm](https://www.npmjs.com/)
+- [Typescript](https://github.com/microsoft/TypeScript)
+- [React](https://github.com/facebook/react)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+- [Webpack](https://github.com/webpack/webpack)
+- [npm](https://github.com/npm/cli)
 
 ## Docs
 
@@ -51,6 +52,5 @@ to begin building your app for production.
 ## Authors
 
 - **Bryan Brotonel** - _Everything_ - [bryanbrotonel](https://github.com/bryanbrotonel)
-- **Adeel Imran** - _Webpack React App Tutorial_ - [adeelibr](https://github.com/adeelibr)
 
 Cheers! :tada:
