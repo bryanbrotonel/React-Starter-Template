@@ -4,7 +4,7 @@ import MobileNavbar from './MobileNavbar';
 
 function Navbar() {
   const links = [
-    ['/', 'The Lilac Foundation'],
+    ['/', 'React Starter Template'],
     ['/about', 'About'],
     ['/team', 'Team'],
     ['/projects', 'Projects'],
